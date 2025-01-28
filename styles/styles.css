@@ -1,0 +1,139 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+body {
+  color: #fff;
+  font-family: "Poppins", "Roboto", sans-serif;
+}
+
+/** Header **/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #1f2e35;
+}
+.header-logo {
+  width: 36px;
+  height: 36px;
+  margin: 18px 0px 18px 148px;
+}
+.navigation {
+  /* geometry */
+  display: flex;
+  justify-content: space-between;
+  min-width: 530px;
+  height: 32px;
+  margin: 24px auto;
+  /* text */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+.login-btn {
+  /* geometry */
+  border-radius: 8px;
+  width: 89px;
+  height: 39px;
+  border: none;
+  background: #0086d6;
+  color: inherit;
+  margin: 20px 151px 21px 0px;
+  /* text */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 108%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+/** Hero section **/
+.hero-container {
+  background: #1f2e35;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.hero {
+  min-height: 452px;
+  max-width: 557px;
+  border: #0086d6 1px solid;
+  margin: 112px 52px 102px 151px;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 152%;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 203%;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+.hero-btn {
+  border-radius: 8px;
+  width: 177px;
+  height: 60px;
+  background: #0086d6;
+  margin-bottom: 50px;
+  /* text */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 305%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: inherit;
+}
+.hero-users {
+  display: flex;
+  flex-direction: row;
+}
+.hero-user-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.hero-user-img {
+}
+.stats-numbers {
+}
+.accent {
+}
+.hero-image {
+  margin: 61px 162px 55px;
+}
+
+/** Popular section */
+
+.popular-container {
+}
+.popular-heading {
+}
+.popular-list {
+}
+.popular-item {
+}
+.popular-item-image {
+}
+.popular-item-name {
+}
+.popular-item-text {
+}
+
+/*  */

@@ -4,59 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gear</title>
-    <style>
-      body {
-        background: #1f2e35;
-      }
-    </style>
+    <link rel="icon" href="./images/logo-header.svg" type="image/icon type" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header-logo"
-        ><img src="./images/logo-header.svg" alt="gear logo"
+      <a href="#"
+        ><img
+          src="./images/logo-header.svg"
+          alt="gear logo"
+          class="header-logo"
       /></a>
       <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="#">Popular</a>
-        <a href="#">New comer</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Popular</a>
+        <a href="#" class="nav-link">New comer</a>
+        <a href="#" class="nav-link">About</a>
       </nav>
-      <button type="button">
-        <img src="./images/night-theme.svg" alt="dark mode" />
-      </button>
+      <button type="button" class="login-btn">Login</button>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero-container">
-        <h1 class="hero-totle">
-          Tools for Designers, Developers, and Business Owners
-        </h1>
-        <p>
-          Information on the latest and most popular design and developer tools
-          around the world.
-        </p>
-        <button type="button" class="hero-btn">Explore now</button>
-        <ul class="statistics">
-          <li class="user-stats">
-            <img src="./images/user1.svg" alt="user#1 profile picture" />
-            <img src="./images/user2.svg" alt="user#2 profile picture" />
+        <div class="hero">
+          <h1 class="hero-title">
+            Tools for Designers, Developers, and Business Owners
+          </h1>
+          <p class="hero-text">
+            Information on the latest and most popular design and developer
+            tools around the world.
+          </p>
+          <button type="button" class="hero-btn">Explore now</button>
+          <div class="hero-users">
+            <ul class="hero-user-list">
+              <li class="hero-user-img">
+                <img src="./images/user1.svg" alt="user#1 profile picture" />
+              </li>
+              <li class="hero-user-img">
+                <img src="./images/user2.svg" alt="user#2 profile picture" />
+              </li>
+            </ul>
             <p class="stats-numbers">
-              <span class="stat-accent">4,00</span>+ User
+              <span class="accent">4,000</span>+ User using the tools
             </p>
-          </li>
-
-          <li class="tools-stats">
-            <img src="./images/xd.svg" alt="adobe xd logo picture" />
-            <img src="./images/invision.svg" alt="invision logo picture" />
-            <p class="stats-numbers">
-              <span class="stat-accent">100</span>+ Tools
-            </p>
-          </li>
-        </ul>
+          </div>
+        </div>
         <img
-          src="./images/hero-image.png"
+          src="./images/hero-img.png"
           alt="different tools"
-          width="548"
-          height="561"
+          width="477"
+          height="550"
           class="hero-image"
         />
       </section>
