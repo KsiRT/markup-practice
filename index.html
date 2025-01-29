@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#"
+      <a href="#" class="header-logo-link"
         ><img
           src="./images/logo-header.svg"
           alt="gear logo"
@@ -43,14 +43,24 @@
           <button type="button" class="hero-btn">Explore now</button>
           <div class="hero-users">
             <ul class="hero-user-list">
-              <li class="hero-user-img">
-                <img src="./images/user1.svg" alt="user#1 profile picture" />
+              <li>
+                <img
+                  src="./images/user1.svg"
+                  alt="user#1 profile picture"
+                  width="46"
+                  height="46"
+                />
               </li>
-              <li class="hero-user-img">
-                <img src="./images/user2.svg" alt="user#2 profile picture" />
+              <li class="second-user-hero">
+                <img
+                  src="./images/user2.svg"
+                  alt="user#2 profile picture"
+                  width="46"
+                  height="46"
+                />
               </li>
             </ul>
-            <p class="stats-numbers">
+            <p class="hero-numbers">
               <span class="accent">4,000</span>+ User using the tools
             </p>
           </div>
@@ -64,44 +74,85 @@
         />
       </section>
 
+      <!-- Statistics -->
+      <section class="stats-container">
+        <ul class="stats-list">
+          <li class="stats-item">
+            <span class="stats-number-total stats-span">100+</span>
+            <h3 class="stats-title">Total tools</h3>
+            <p class="stats-text">
+              Lot of tools that offer free and premium features
+            </p>
+          </li>
+          <li class="stats-item">
+            <span class="stats-number-free stats-span">50+</span>
+            <h3 class="stats-title">Free tools</h3>
+            <p class="stats-text">
+              Explore free tools that would help you achieve something
+            </p>
+          </li>
+          <li class="stats-item">
+            <span class="stats-number-premium stats-span">40+</span>
+            <h3 class="stats-title">Premium tools</h3>
+            <p class="stats-text">
+              Need more feature? lets try the premium tools
+            </p>
+          </li>
+        </ul>
+      </section>
       <!-- Most Popular -->
       <section class="popular-container">
-        <h2 class="popular-heading">Most Popular</h2>
+        <h2 class="popular-heading">Most popular tools</h2>
+        <p class="popular-text">
+          Most popular tools for designer and developer
+        </p>
         <ul class="popular-list">
           <li class="popular-item">
             <img
               src="./images/popular-xd.png"
               alt="adobe xd logo picture"
               class="popular-item-image"
+              width="320"
             />
             <h3 class="popular-item-name">Adobe XD</h3>
+            <span class="popular-item-span free-span"></span>
             <p class="popular-item-text">
               Adobe XD is a vector-based design tool for creating website and
               application designs.
             </p>
+            <span class="popular-item-tag">Design</span>
+            <span class="popular-item-tag">Development</span>
           </li>
           <li class="popular-item">
             <img
               src="./images/popular-invision.png"
               alt="invision logo picture"
               class="popular-item-image"
+              width="320"
             />
             <h3 class="popular-item-name">InVision</h3>
+            <span class="popular-item-span free-span"></span>
             <p class="popular-item-text">
               InVision designs for website, mobile, tablet, and watch needs.
             </p>
+            <span class="popular-item-tag">Design</span>
+            <span class="popular-item-tag">Development</span>
           </li>
           <li class="popular-item">
             <img
               src="./images/popular-figma.png"
               alt="figma logo picture"
               class="popular-item-image"
+              width="320"
             />
             <h3 class="popular-item-name">Figma</h3>
+            <span class="popular-item-span premium-span"></span>
             <p class="popular-item-text">
               Figma is a cloud-based design application and prototyping tool for
               digital projects.
             </p>
+            <span class="popular-item-tag">Design</span>
+            <span class="popular-item-tag">Development</span>
           </li>
         </ul>
       </section>
