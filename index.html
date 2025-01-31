@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
+    <!--? ---------- ---------- HEADER ------------>
     <header class="header">
       <a href="#" class="header-logo-link"
         ><img
@@ -30,7 +31,8 @@
       <button type="button" class="login-btn">Login</button>
     </header>
     <main>
-      <!-- Hero -->
+      <!--? ---------- ---------- Hero ------------>
+
       <section class="hero-container">
         <div class="hero">
           <h1 class="hero-title">
@@ -74,7 +76,8 @@
         />
       </section>
 
-      <!-- Statistics -->
+      <!--? ---------- ---------- Statistics ------------>
+
       <section class="stats-container">
         <ul class="stats-list">
           <li class="stats-item">
@@ -100,10 +103,12 @@
           </li>
         </ul>
       </section>
-      <!-- Most Popular -->
+
+      <!--? ---------- ---------- Most Popular ------------>
+
       <section class="popular-container">
-        <h2 class="popular-heading">Most popular tools</h2>
-        <p class="popular-text">
+        <h2 class="section-heading">Most popular tools</h2>
+        <p class="section-text">
           Most popular tools for designer and developer
         </p>
         <ul class="popular-list">
@@ -115,17 +120,17 @@
               width="320"
             />
 
-            <div class="popular-item-nametag">
-              <h3 class="popular-item-name">Figma</h3>
-              <span class="popular-item-span free-span">Free</span>
+            <div class="card-item-nametag">
+              <h3 class="card-item-name">Figma</h3>
+              <span class="card-item-span free-span">Free</span>
             </div>
-            <p class="popular-item-text">
+            <p class="card-item-text">
               Figma is a cloud-based design application and prototyping tool for
               digital projects.
             </p>
-            <ul class="popular-item-tags">
-              <li class="popular-item-tag"><p>Design</p></li>
-              <li class="popular-item-tag"><p>Development</p></li>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
 
@@ -136,17 +141,17 @@
               class="popular-item-image"
               width="320"
             />
-            <div class="popular-item-nametag">
-              <h3 class="popular-item-name">Adobe XD</h3>
-              <span class="popular-item-span free-span">Free</span>
+            <div class="card-item-nametag">
+              <h3 class="card-item-name">Adobe XD</h3>
+              <span class="card-item-span free-span">Free</span>
             </div>
-            <p class="popular-item-text">
+            <p class="card-item-text">
               Adobe XD is a vector-based design tool for creating website and
               application designs.
             </p>
-            <ul class="popular-item-tags">
-              <li class="popular-item-tag"><p>Design</p></li>
-              <li class="popular-item-tag"><p>Development</p></li>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
 
@@ -157,76 +162,87 @@
               class="popular-item-image"
               width="320"
             />
-            <div class="popular-item-nametag">
-              <h3 class="popular-item-name">InVision</h3>
-              <span class="popular-item-span premium-span">Premium</span>
+            <div class="card-item-nametag">
+              <h3 class="card-item-name">InVision</h3>
+              <span class="card-item-span premium-span">Premium</span>
             </div>
 
-            <p class="popular-item-text">
+            <p class="card-item-text">
               InVision designs for website, mobile, tablet, and watch needs.
             </p>
-            <ul class="popular-item-tags">
-              <li class="popular-item-tag"><p>Design</p></li>
-              <li class="popular-item-tag"><p>Development</p></li>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
         </ul>
-        <button type="button" class="popular-button">See all</button>
+        <button type="button" class="section-button">See all</button>
       </section>
 
-      <section>
-        <h2>New comer tools</h2>
-        <p>New tools gains popularity</p>
-        <ul>
-          <li>
-            <img src="" alt="" />
-            <h3>Framer</h3>
-            <span>Free</span>
-            <p>It's prototyping made simple—no code required, browser-based.</p>
-            <ul>
-              <li><p>Design</p></li>
-              <li><p>Development</p></li>
+      <!--? ---------- ---------- New comer section ------------>
+
+      <section class="newcomer-container">
+        <h2 class="section-heading">New comer tools</h2>
+        <p class="section-text">New tools gains popularity</p>
+        <ul class="newcomer-list">
+          <li class="newcomer-item">
+            <img src="./images/new-framer.png" alt="" class="newcomer-img" />
+            <h3 class="card-item-name">Framer</h3>
+            <span class="card-item-span free-span">Free</span>
+            <p class="card-item-text">
+              It's prototyping made simple—no code required, browser-based.
+            </p>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3>Whimsical</h3>
-            <span>Free</span>
-            <p>
+            <img src="./images/new-whimsical.png" alt="" class="newcomer-img" />
+            <h3 class="card-item-name">Whimsical</h3>
+            <span class="card-item-span free-span">Free</span>
+            <p class="card-item-text">
               Communicate visually at the speed of thought – collaborative
               flowcharts.
             </p>
-            <ul>
-              <li><p>Design</p></li>
-              <li><p>Development</p></li>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3>MindMaster</h3>
-            <span>Free 30 days</span>
-            <p>
+            <img
+              src="./images/new-mindmaster.png"
+              alt=""
+              class="newcomer-img"
+            />
+            <h3 class="card-item-name">MindMaster</h3>
+            <span class="card-item-span temp-free-span">Free 30 days</span>
+            <p class="card-item-text">
               Full-featured collaborative mind mapping and brainstorming tool.
             </p>
-            <ul>
-              <li><p>Design</p></li>
-              <li><p>Development</p></li>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
           <li>
-            <img src="" alt="" />
-            <h3>Zapier</h3>
-            <span>Premium</span>
-            <p>Zapier moves info between your web apps automatically.</p>
-            <ul>
-              <li><p>Design</p></li>
-              <li><p>Development</p></li>
+            <img src="./images/new-zapier.png" alt="" class="newcomer-img" />
+            <h3 class="card-item-name">Zapier</h3>
+            <span class="card-item-span premium-span">Premium</span>
+            <p class="card-item-text">
+              Zapier moves info between your web apps automatically.
+            </p>
+            <ul class="card-item-tags">
+              <li class="card-item-tag"><p>Design</p></li>
+              <li class="card-item-tag"><p>Development</p></li>
             </ul>
           </li>
         </ul>
+        <button type="button" class="section-button">See all</button>
       </section>
 
-      <!-- Trusted brands -->
+      <!--? ---------- ---------- Trusted brands ------------>
       <section class="trusted-container">
         <h2 class="trusted-heading">Trusted by brands</h2>
         <ul class="trusted-list">
@@ -275,7 +291,7 @@
         </ul>
       </section>
 
-      <!-- New comer tools -->
+      <!--? ---------- ---------- New comer tools ------------>
       <section class="newcomer-container">
         <ul class="newcomer-list">
           <li class="newcomer-item">
@@ -329,7 +345,7 @@
         </ul>
       </section>
 
-      <!-- Testimonial -->
+      <!--? ---------- ---------- Testimonial ------------>
       <section class="testimonial-container">
         <h2 class="testimonial-heading">Testimonial</h2>
         <ul class="testimonial-list">
@@ -366,7 +382,7 @@
         </ul>
       </section>
 
-      <!-- Subscribe -->
+      <!--? ---------- ---------- Subscribe ------------>
       <section>
         <h2>Subscribe</h2>
         <p>Subscribe to get exclusive news &amp; offer</p>
@@ -374,6 +390,8 @@
         <button type="submit">Subscribe</button>
       </section>
     </main>
+
+    <!--? ---------- ---------- FOOTER ------------>
     <footer>
       <a href="#"><img src="./images/logo-footer.svg" alt="gear logo" /></a>
       <ul>
