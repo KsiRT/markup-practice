@@ -8,7 +8,13 @@ body {
   font-family: "Poppins", "Roboto", sans-serif;
 }
 
-/*?---------- Common styles ----------?*/
+/*?-------------------- Common styles ----------?*/
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
 .section-heading {
   font-weight: 600;
   font-size: 36px;
@@ -18,7 +24,6 @@ body {
   margin: 0 auto 16px;
 }
 .section-text {
-  margin-bottom: 53px;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
@@ -29,10 +34,20 @@ body {
   fill: #f5f5f5;
   margin-bottom: 28px;
 }
+.card-item {
+  transition: 450ms;
+}
+.card-item:hover,
+.card-item:focus {
+  box-shadow: 0 32px 56px 0 rgba(0, 0, 0, 0.08);
+  transform: scale(103%);
+}
 .card-item-nametag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
 .card-item-name {
   display: inline-block;
@@ -40,7 +55,6 @@ body {
   font-size: 28px;
   line-height: 150%;
   color: #333e44;
-  margin-bottom: 8px;
 }
 .card-item-span {
   display: inline-block;
@@ -70,7 +84,6 @@ body {
 .card-item-tags {
   display: flex;
   flex-direction: row;
-  margin-top: auto;
   gap: 16px;
   list-style: none;
 }
@@ -105,18 +118,20 @@ body {
   transform: scale(105%);
 }
 
-/**---------- Header  ----------**/
+/**-------------------- Header  ----------**/
 .header {
   color: #fff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   background: #1f2e35;
+  padding: 18px 150px;
+  min-width: none;
 }
 
 .header-logo {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 43px;
   transition: 450ms;
 }
 .header-logo:hover,
@@ -125,7 +140,8 @@ body {
 }
 
 .header-logo-link {
-  margin: 18px 0px 18px 148px;
+  width: 36px;
+  height: 36px;
 }
 
 .navigation {
@@ -133,8 +149,9 @@ body {
   display: flex;
   justify-content: space-between;
   min-width: 530px;
-  height: 32px;
-  margin: 24px auto;
+  max-height: 32px;
+  padding: 6px 0px;
+  margin: 0 215px 0 267px;
   /* text */
   font-weight: 400;
   font-size: 18px;
@@ -161,7 +178,7 @@ body {
   border: none;
   background: #0086d6;
   color: inherit;
-  margin: 20px 151px 21px 0px;
+  margin: 2px 0px;
   /* text */
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -179,19 +196,20 @@ body {
   transform: scale(105%);
 }
 
-/**---------- Hero section ----------**/
+/**-------------------- Hero section ----------**/
 .hero-container {
   color: #fff;
   background: #1f2e35;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero {
   min-height: 452px;
   max-width: 557px;
   /* border: #0086d6 1px solid; */
-  margin: 112px 52px 102px 151px;
+  padding: 112px 0px 102px 0px;
 }
 .hero-title {
   font-weight: 600;
@@ -244,17 +262,20 @@ body {
   margin-left: -23px;
 }
 .hero-numbers {
-  margin: 12px 0px 0px 15px;
-  padding: auto;
+  padding: 12px 0px 10px 15px;
 }
 .accent {
   color: #0086d6;
 }
 .hero-image {
-  margin: 61px 162px 55px;
+  padding: 61px 0px 55px;
 }
 
-/**---------- Statistics  ----------*/
+/**-------------------- Statistics  ----------*/
+
+.stats-container {
+  padding: 70px 150px 70px;
+}
 
 .stats-list {
   display: flex;
@@ -267,7 +288,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 70px auto 120px;
 }
 
 .stats-span {
@@ -302,20 +322,22 @@ body {
   color: #f36;
 }
 
-/**---------- Popular section ----------*/
+/**-------------------- Popular section ----------*/
 
 .popular-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px 150px 80px;
 }
+
 .popular-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 31px;
   list-style: none;
-  margin-bottom: 50px;
+  padding: 53px 0px 50px;
 }
 .popular-item {
   border-radius: 8px;
@@ -326,28 +348,50 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  transition: 450ms;
 }
 
-.popular-item:hover,
-.popular-item:focus {
-  box-shadow: 0 32px 56px 0 rgba(0, 0, 0, 0.08);
-  transform: scale(103%);
+.popular-item-image {
+  border-radius: 5px;
+  margin-bottom: 28px;
 }
 
-/**---------- New comer section ----------**/
+/**-------------------- New comer section ----------**/
 
 .newcomer-container {
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  padding: 50px;
 }
 .newcomer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  padding: 53px 0px 50px;
+  gap: 50px;
+  transition: 450ms;
 }
 .newcomer-item {
   border-radius: 8px;
-  width: 500px;
-  height: 194px;
+  width: 452px;
+  height: 146px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
 }
+.newcomer-item-name {
+  font-size: 24px;
+}
+.newcomer-item-span {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/**-------------------- Trusted section ----------  */
